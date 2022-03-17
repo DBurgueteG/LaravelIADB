@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Juego;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
+});*/
+
+Route::get('/', function () {
+    $juegos = Juego::all();
+    return view('juegos1', ['juegos'=>$juegos]);
 });
