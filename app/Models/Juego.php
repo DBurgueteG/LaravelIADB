@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Juego extends Model
 {
     use HasFactory;
+    public $timestamps = false;
     protected $table="proyectoiadb";
 
     
