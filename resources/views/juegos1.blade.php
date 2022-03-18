@@ -5,7 +5,7 @@
 		
 		<div class="panel panel-default">
     <div class="panel-heading">
-        Nueva Actividad
+        Nuevo Juego
     </div>
 
     <div class="panel-body">
@@ -13,7 +13,7 @@
         
         
 
-        <!-- Formulario para añadir una actividad -->
+        <!-- Formulario para añadir un juego -->
         <form action="{{url('/juego')}}" method="POST" class="form-horizontal">
            {{csrf_field()}}
 
@@ -42,7 +42,7 @@
                 </div>
             </div>
 
-            <!-- Add Actividad Button -->
+            <!-- Add Juego Button -->
             <div class="form-group">
                 <div class="col-sm-offset-3 col-sm-6">
                     <button type="submit" class="btn btn-default">
@@ -55,11 +55,11 @@
 </div>
 
 			
-			<!-- Actividades Actuales -->
+			<!-- Juegos Actuales -->
 			@if (sizeof($juegos) > 0)
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						 Actividades Actuales
+						 Juegos Actuales
 					</div>
 
 					<div class="panel-body">
